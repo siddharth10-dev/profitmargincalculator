@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profit Margin Generator</title>
+    <link rel="stylesheet" href="/style.css"></link>
+    <script src="/script.js"></script>
+
+</head>
+<body>
+    <h1>MarginMate</h1>
+    <div class="input">
+    <form id="profitForm">
+  <input id="cost" class="box" type="number" placeholder="Product Cost (₹)" required>
+  <input id="price" class="box" type="number" placeholder="Selling Price (₹)" required>
+  <input id="discount" class="box" type="number" placeholder="Discount (%)">
+  <input id="tax" class="box" type="number" placeholder="Tax Rate (%)">
+  <input id="shipping" class="box" type="number" placeholder="Shipping Cost (₹)">
+  <input id="platform" class="box" type="number" placeholder="Platform Fee (%)">
+  <input id="marketing" class="box" type="number" placeholder="Marketing Spend (%)">
+  <input id="other" class="box" type="number" placeholder="Other Costs (₹)">
+  <button id="button" type="submit">Calculate Profit</button>
+</form>
+
+<!-- This is the result box hidden initially -->
+<div id="resultBox" style="display:none;" class="input">
+  <div class="box" id="resultText"></div>
+</div>
